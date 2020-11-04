@@ -139,7 +139,7 @@ body {
 }
 
 .pager > .active {
-    background: #2e2e2e!;
+    background: #2e2e2e;
     width: 35px; height: 15px;
     border-radius: 30px;
 }
@@ -149,19 +149,16 @@ body {
 }
 
 .controls>.left {
-    left: 360px;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .controls>.right {
-    right: 360px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
-
-
-
 /* new_event */
 .new_event{
 padding-top: 450px;

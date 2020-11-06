@@ -149,13 +149,13 @@ body {
 }
 
 .controls>.left {
-    left: 30px;
+    left: 370px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .controls>.right {
-    right: 30px;
+    right: 370px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -320,7 +320,7 @@ width: 1200px; height: 300px;
 }
 #new_menu > .content_line {
     height: 70px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ab9b7f;;
     margin-bottom: 60px;
 }
 #new_menu > .new_menu_title {
@@ -392,23 +392,39 @@ width: 1200px; height: 300px;
     background-attachment:fixed; 
     text-align:center;;}
 .main_store .main_store_inner {
-    position:relative; height:400px;
+    position:relative; 
+    height:400px;
 }
 .main_store .main_store_inner:after {
     display:table; clear:both; content:"";
 }
 .main_store .main_store_inner > div {
-    position:absolute; left:50%; top:0; width:380px; height:380px; border-radius:50%; text-align:center; transition: all 0.7s ease-in-out; transform: rotateY(180deg); opacity:0; transform-style:preserve-3d;}
+    position:absolute; left:55%; top:0; width:380px; height:380px; border-radius:50%; text-align:center; transition: all 0.7s ease-in-out; 
+    transform: rotateY(180deg); opacity:0; transform-style:preserve-3d;
+}
 .main_store .main_store_inner > div.on {
     transform: rotateY(360deg); opacity:1;}
 .main_store .main_store_inner > div a {
     display:inline-block; margin-left:-10px; padding-top:177px; text-align:left;}
-.main_store .main_store_inner > div h3 {margin-bottom:10px; color:#fff; font-size:17px; font-weight:normal;}
-.main_store .main_store_inner > div p {color:#fff; font-size:15px;}
-.main_store .main_store_inner .map {margin:-45px 0 0 -452px; background:url(../images/bg_map.png) no-repeat;}
+.main_store .main_store_inner > div h3 {
+    margin-bottom:10px; color:#fff; 
+    font-size:17px; 
+    font-weight:normal;
+}
+.main_store .main_store_inner > div p {
+    color:#fff; font-size:15px;
+}
+.main_store .main_store_inner .map {
+    margin:-45px 0 0 -452px; 
+    background:url(../images/bg_map.png) no-repeat;}
 .main_store .main_store_inner .map p span {color:#ff8a00;}
-.main_store .main_store_inner .catering {margin:75px 0 0 -47px; background:url(../images/bg_catering\ .png) no-repeat;}
-.main_store .main_store_inner .catering a {padding-left:150px;}
+.main_store .main_store_inner .catering {
+    margin:75px 0 0 -47px; 
+    background:url(../images/bg_catering\ .png) no-repeat;
+}
+.main_store .main_store_inner .catering a {
+    padding-left:150px;
+}
 .main_store .main_store_inner .catering h3 {color:#372317;}
 .main_store .main_store_inner .catering p {color:#665449;}
 .main_store .main_store_inner .map .btn_more a,
@@ -425,7 +441,7 @@ width: 1200px; height: 300px;
 #gallery > .content_line {
     margin-top: 80px;
     height: 96.5px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ab9b7f;;
     margin-bottom: 64px;
 }
 #gallery > .gallery_title {
@@ -593,64 +609,58 @@ width: 1200px; height: 300px;
     display: block;
 }
 
-/* footer */
-#main_footer {
-    position: relative;
-    clear: both;
-    overflow: hidden;
-    width: 1200px;
-    margin: 0 auto;
-    height: 200px;
-    background-color: #2e2e2e;
+/* footer:before{display:block;width:100%;height:6px;background:url(../images/con_bar.jpg)no-repeat center top;background-size:cover;content:'';} */
+footer{
+    background: #2c2a29;
+}
+.in_footer{padding:30px 0;text-align:center;color:#999;position:relative;}
+.in_footer .company_info{padding-top:30px;margin-bottom:0;font-size:0.812rem;}
+.in_footer .company_info li{display:inline-block;list-style:none;line-height:1.7;}
+.in_footer .company_info li:after{padding:0 14px;content:'l';}
+.in_footer .company_info li:last-child:after{display:none;}
+.in_footer .copyright{margin-top:2rem;}
+.in_footer .r_box{width:100%;max-width:175px;position:absolute;top:30px;right:0;font-size:0.75rem;}
+.in_footer .family_site{
+	width:100%;
+	padding:5px 7px;
+	margin-bottom:25px;
+	border:1px solid #999;
+	position: relative;
+	cursor: pointer;
+	text-align: left;
+	-webkit-appearance: menulist-button;
+}
+.in_footer .family_site #fmenu {
+	display: none;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 28px;
+    left: -1px;
+    right: 0;
+    background: #fff;
+	border: 1px solid #999;
+	width: 175px;
+
 }
 
-#main_footer  > .main_footer {
-    position: relative;
-    width: 1200px; height: 200px;
-    background-color: #2e2e2e;
-    margin: 0 auto;
+.in_footer .family_site #fmenu li {
+	padding: 7px 0;
 }
 
-#main_footer  > .main_footer > #footer_logo {
-    position: absolute;
-    width: 80px; height: 80px;
-    left: 0; top: 49.5px;
-    /* padding-top: 49.5px; */
+.in_footer .family_site #fmenu li>a {
+	display:block;
 }
 
-#main_footer  > .main_footer > #footer_logo img {
-    width: 80px; height: 80px;
-    opacity: 0.6;
-}
+.in_footer .coupon{text-align:right;}
+.in_footer .coupon span{margin-right:5px;}
+.in_footer .logo{display:inline-block;width:179px;}
+.in_footer .logo.light{display:none;}
+.story_wrap footer{background:#121212;}
+.story_wrap .in_footer{color:#fff;}
 
-#main_footer  > .main_footer > .footer_line1 {
-    position: absolute;
-    top: 58.5px; left: 280.1px;
-    width: 145px; height: 64px;
-    border-left: 1px solid rgba(255, 255, 255, 0.7);
-    opacity: 0.3;
-}
-#main_footer  > .main_footer > .footer_text {
-    position: absolute;
-    top: 46px; left: 446px;
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    font-size: 12px;
-}
-#main_footer  > .main_footer > .footer_text span { color: #fff; }
-#main_footer  > .main_footer > .footer_line2 {
-    position: absolute;
-    top: 58.5px; right: 240.6px; 
-    width: 105px; height: 64px;
-    border-right: 1px solid rgba(255, 255, 255, 0.7);
-    opacity: 0.3;
-    
-}
-#main_footer  > .main_footer > .footer_sns {
-    position: absolute;
-    top: 76px; right: 0;
-    opacity: 0.7;
-}
-#main_footer  > .main_footer > .footer_sns > a > img {
-    margin-left: 15px;
+@media screen and (max-width:800px){
+	.in_footer .r_box{display:none;}
+	.in_footer .company_info{font-size:1rem;}
+	.in_footer .company_info li{display:block;}
+	.in_footer .company_info li:after{display:none;}
 }

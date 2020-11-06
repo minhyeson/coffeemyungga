@@ -103,8 +103,17 @@ body {
     height: 350px;
     background-image: url(../images/title.jpg);
     background-size: cover;
+    text-align: center;
+    line-height: 350px;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family:'Heebo-Thin';
+    font-weight: lighter;
 }
 
+#title > h1 {
+    color: #fff;
+}
 .location {
     width: 1200px; height: 50.5px;
     margin: 0 auto;
@@ -114,7 +123,7 @@ body {
 .location h1 {
     margin-top: 64px;
     text-align: center;
-    font-size: 48px;
+    font-size: 22px;
     font-family:'Heebo-Bold';
 }
 .location span {
@@ -129,7 +138,7 @@ body {
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     margin-top: 95.5px;
 }
 
@@ -154,12 +163,13 @@ body {
 
 /* visual 영역 */
 #visual {
-    width: 1200px;
+    position: relative;
+    width: 1200px; height: 1618px;
     margin: 0 auto;
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 120.7px;
 }
-
 
 #visual > p {
     font-size: 20px;
@@ -171,12 +181,7 @@ body {
     width: 1900px; height: 6px;
     background-image: linear-gradient(to bottom, rgba(200, 201, 198, 0.8) , white);
 }
-.bar {
-    width: 2px; height: 200.83px;
-    background: #ccc;
-    margin: 0 auto;
-    margin-top: 93.5px;
-}
+
 
 .story_myunngga {
     width: 1200px;
@@ -186,18 +191,16 @@ body {
 .story {
     width: 590px;
     margin: 0 auto;
-    margin-left: 10px;
-
+    margin-left: 5px;
     float: left;
-    display: flex;
     flex-wrap: wrap;
 }
 
 .story > .memo1, .memo2, .memo3, .memo4 {
     float: left;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
-    width: 270px; height: 270px;
+    width: 280px; height: 270px;
 }
 
 .story > .img {
@@ -206,80 +209,62 @@ body {
 
 }
 
-.story > .memo1 > h2,
-.story > .memo2 > h2,
-.story > .memo3 > h2,
-.story > .memo4 > h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.story > .memo1 > p,
-.story > .memo2 > p,
-.story > .memo3 > p,
-.story > .memo4 > p {
-    font-size: 16px;
-}
-
 .story_margin {
     margin-bottom: 60.7px;
 }
 
-/* footer */
-#main_footer {
-    clear: both;
-    overflow: hidden;
-    height: 200px;
-    background-color: #2e2e2e;
+/* footer:before{display:block;width:100%;height:6px;background:url(../images/con_bar.jpg)no-repeat center top;background-size:cover;content:'';} */
+footer{
+    background: #2c2a29;
+}
+.in_footer{padding:30px 0;text-align:center;color:#999;position:relative;}
+.in_footer .company_info{padding-top:30px;margin-bottom:0;font-size:0.812rem;}
+.in_footer .company_info li{display:inline-block;list-style:none;line-height:1.7;}
+.in_footer .company_info li:after{padding:0 14px;content:'l';}
+.in_footer .company_info li:last-child:after{display:none;}
+.in_footer .copyright{margin-top:2rem;}
+.in_footer .r_box{width:100%;max-width:175px;position:absolute;top:30px;right:0;font-size:0.75rem;}
+.in_footer .family_site{
+	width:100%;
+	padding:5px 7px;
+	margin-bottom:25px;
+	border:1px solid #999;
+	position: relative;
+	cursor: pointer;
+	text-align: left;
+	-webkit-appearance: menulist-button;
+}
+.in_footer .family_site #fmenu {
+	display: none;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 28px;
+    left: -1px;
+    right: 0;
+    background: #fff;
+	border: 1px solid #999;
+	width: 175px;
+
 }
 
-#main_footer  > .main_footer {
-    position: relative;
-    width: 1200px; height: 200px;
-    background-color: #2e2e2e;
-    margin: 0 auto;
+.in_footer .family_site #fmenu li {
+	padding: 7px 0;
 }
 
-#main_footer  > .main_footer > #footer_logo {
-    position: absolute;
-    width: 80px; height: 80px;
-    left: 0; top: 49.5px;
-    /* padding-top: 49.5px; */
+.in_footer .family_site #fmenu li>a {
+	display:block;
 }
 
-#main_footer  > .main_footer > #footer_logo img {
-    width: 80px; height: 80px;
-    opacity: 0.6;
-}
+.in_footer .coupon{text-align:right;}
+.in_footer .coupon span{margin-right:5px;}
+.in_footer .logo{display:inline-block;width:179px;}
+.in_footer .logo.light{display:none;}
+.story_wrap footer{background:#121212;}
+.story_wrap .in_footer{color:#fff;}
 
-#main_footer  > .main_footer > .footer_line1 {
-    position: absolute;
-    top: 58.5px; left: 280.1px;
-    width: 145px; height: 64px;
-    border-left: 1px solid rgba(255, 255, 255, 0.7);
-    opacity: 0.3;
-}
-#main_footer  > .main_footer > .footer_text {
-    position: absolute;
-    top: 46px; left: 446px;
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    font-size: 12px;
-}
-#main_footer  > .main_footer > .footer_text span { color: #fff; }
-#main_footer  > .main_footer > .footer_line2 {
-    position: absolute;
-    top: 58.5px; right: 240.6px; 
-    width: 105px; height: 64px;
-    border-right: 1px solid rgba(255, 255, 255, 0.7);
-    opacity: 0.3;
-    
-}
-#main_footer  > .main_footer > .footer_sns {
-    position: absolute;
-    top: 76px; right: 0;
-    opacity: 0.7;
-}
-#main_footer  > .main_footer > .footer_sns > a > img {
-    margin-left: 15px;
+@media screen and (max-width:800px){
+	.in_footer .r_box{display:none;}
+	.in_footer .company_info{font-size:1rem;}
+	.in_footer .company_info li{display:block;}
+	.in_footer .company_info li:after{display:none;}
 }
